@@ -1,18 +1,23 @@
+<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!-- saved from url=(0064)file:///C:/Users/ammarr/Documents/ResponsiveWeb/landingpage.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style>
+<style>
+  
 body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .showcase::after {
   content: '';
   height: 100vh;
   width: 100%;
-  background-image: url(a.jpg);
+  background-image: url(backdrop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,11 +56,14 @@ body {
 }
 
 .content .title {
-  font-size: 2.2rem;
+  font-family: 'Mansalva', cursive;
+  font-size: 3.5rem;
   margin-top: 1rem;
 }
 
 .content .text {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
   line-height: 1.7;
   margin-top: 1rem;
 }
@@ -149,11 +157,36 @@ footer p {
 
 
 </style>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">CAROBAR</a>
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New Cars</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Used Cars</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Forum</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-</head><body><header class="showcase">
+<header class="showcase">
 
     <div class="content">
-      <img src="file:///C:/Users/ammarr/Documents/ResponsiveWeb/20f36e42-6605-4847-b865-1bdd26d88360_200x200%20(1).png" class="logo" alt="CAROBAR">
+      <img src="logo.png" class="logo" alt="CAROBAR">
       <div class="title">
         HOMEPAGE
       </div>
@@ -162,6 +195,12 @@ footer p {
       </div>
     </div>
   </header>
+
+    
+
+
+   
+
 
   <!-- Services -->
   <section class="services">
@@ -201,5 +240,5 @@ footer p {
   </section>
 
   <footer class="center bg-dark">
-    <img id:="" "footer-img"="" src="file:///C:/Users/ammarr/Documents/ResponsiveWeb/20f36e42-6605-4847-b865-1bdd26d88360_200x200%20(1).png"><p>CAROBAR INC. © 2019</p>
-  </footer></body></html>
+    <img id: "footer-img" src="logo.png"><p>CAROBAR INC. &copy; 2019</p>
+  </footer>
