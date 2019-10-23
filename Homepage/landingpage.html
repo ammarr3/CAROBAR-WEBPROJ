@@ -4,6 +4,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 <style>
   
@@ -13,60 +15,76 @@ body {
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.showcase::after {
+.showcase::before {
   content: '';
   height: 100vh;
   width: 100%;
-  background-image: url(backdrop.jpg);
+  background-image: url(temp-back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  filter: blur(10px);
+  filter: blur(2px);
   -webkit-filter: blur(10px);
   transition: all 1000ms;
 }
-
-.showcase:hover::after {
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
-
-.showcase:hover .content {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-}
-
-.content {
+.content{
   position: absolute;
-  z-index: 1;
-  top: 10%;
-  left: 50%;
-  margin-top: 105px;
-  margin-left: -145px;
+  top: 5%;
+  left: 43%;
+  height:30px;
   width: 300px;
-  height: 350px;
-  text-align: center;
-  transition: all 1000ms;
+  display: inline;
 }
 
-.content .logo {
-  height: 180px;
-  width: 180px;
-}
-
-.content .title {
-  font-family: 'Mansalva', cursive;
-  font-size: 3.5rem;
-  margin-top: 1rem;
-}
-
-.content .text {
+.content .header-text {
+  top:40%;
+  left:50%;
   font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
-  line-height: 1.7;
-  margin-top: 1rem;
+  font-size: 3.0rem;
+  line-height: 1;
+  margin-top: 5rem;
+  text-anchor: middle;
+  }
+  #logo{
+    color: gold;
+  }
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  height: 65px;
+  
+  border-radius: 40px;
+  padding: 10px;
 }
+.search-btn{
+  color: gold;
+  float:right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float:left;
+  padding-left:6px;
+  color:white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+}
+
 
 .container {
   max-width: 960px;
@@ -117,7 +135,7 @@ footer p {
   }
 
   .content {
-    top: 5%;
+    top: 2%;
     margin-top: 5px;
   }
 
@@ -126,7 +144,7 @@ footer p {
     width: 140px;
   }
 
-  .content .text {
+  .content .header-text {
     display: none;
   }
 
@@ -144,7 +162,7 @@ footer p {
 /* Landscape */
 @media (max-height: 500px) {
   .content .title,
-  .content .text {
+  .content .header-text {
     display: none;
   }
 
@@ -157,45 +175,26 @@ footer p {
 
 
 </style>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="#">CAROBAR</a>
-  <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">New Cars</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Used Cars</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#">Forum</a>
-      </li>
-      <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
 
 <header class="showcase">
+  <div class="content">
+      <div class="header-text">
+          <p>Welcome to <div id="logo">CAROBAR</div></p>
+            </div>
 
-    <div class="content">
-      <img src="logo.png" class="logo" alt="CAROBAR">
-      <div class="title">
-        HOMEPAGE
+  </div>
+  
+
+      <div class="search-box">
+        <input class="search-txt" type = "text" name="" placeholder="Type to search">
+        <a class="search-btn" href="#">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
       </div>
-      <div class="text">
-        Welcome to <b>CAROBAR</b>!
-      </div>
-    </div>
+    
   </header>
 
+  
     
 
 
@@ -206,7 +205,7 @@ footer p {
   <section class="services">
     <div class="container grid-3 center">
       <div>
-        <i class="fab fa-youtube fa-3x"></i>
+        <i class="fa fa-handshake-o" aria-hidden="true"></i>
         <h3>DEALER</h3>
         <p>Interested in selling your car?</p>
       </div>
