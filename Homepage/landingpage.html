@@ -1,185 +1,22 @@
+<html>
+  <head>
+    <title>CAROBAR-LP</title>
 <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-<style>
-  
-body {
-  background: rgba(0, 0, 0, 0.9);
-  margin: 0;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.showcase::before {
-  content: '';
-  height: 100vh;
-  width: 100%;
-  background-image: url(temp-back.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  filter: blur(2px);
-  -webkit-filter: blur(10px);
-  transition: all 1000ms;
-}
-.content{
-  position: absolute;
-  top: 5%;
-  left: 43%;
-  height:30px;
-  width: 300px;
-  display: inline;
-}
-
-.content .header-text {
-  top:40%;
-  left:50%;
-  font-family: 'Lobster', cursive;
-  font-size: 3.0rem;
-  line-height: 1;
-  margin-top: 5rem;
-  text-anchor: middle;
-  }
-  #logo{
-    color: gold;
-  }
-.search-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: #2f3640;
-  height: 65px;
-  
-  border-radius: 40px;
-  padding: 10px;
-}
-.search-btn{
-  color: gold;
-  float:right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-txt{
-  border:none;
-  background: none;
-  outline: none;
-  float:left;
-  padding-left:6px;
-  color:white;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 240px;
-}
-
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
-  padding: 4rem 1rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-2 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.center {
-  text-align: center;
-  margin: auto;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-
-footer {
-  padding: 2.2rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Small Screens */
-@media (max-width: 560px) {
-  .showcase::after {
-    height: 50vh;
-  }
-
-  .content {
-    top: 2%;
-    margin-top: 5px;
-  }
-
-  .content .logo {
-    height: 140px;
-    width: 140px;
-  }
-
-  .content .header-text {
-    display: none;
-  }
-
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .services div {
-    border-bottom: #333 dashed 1px;
-    padding: 1.2rem 1rem;
-  }
-}
-
-/* Landscape */
-@media (max-height: 500px) {
-  .content .title,
-  .content .header-text {
-    display: none;
-  }
-
-  .content {
-    top: 0;
-  }
-}
-
-
-
-
-</style>
-
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<link rel = "stylesheet" type = "text/css" href = "stylelp.css" />
+  </head>
+<body>
 <header class="showcase">
   <div class="content">
       <div class="header-text">
-          <p>Welcome to <div id="logo">CAROBAR</div></p>
+          <h1>Welcome to <div id="logo">CAROBAR</div></h1>
             </div>
 
   </div>
@@ -194,40 +31,31 @@ footer p {
     
   </header>
 
-  
-    
-
-
-   
-
-
-  <!-- Services -->
   <section class="services">
     <div class="container grid-3 center">
       <div>
-        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+        <i class="fas fa-handshake fa-3x"></i>
         <h3>DEALER</h3>
         <p>Interested in selling your car?</p>
       </div>
       <div>
-        <i class="fas fa-chalkboard-teacher fa-3x"></i>
+        <i class="fas fa-shopping-cart fa-3x"></i>">
         <h3>BUYER</h3>
         <p>Looking for a car?</p>
       </div>
-      <div>
-        <i class="fas fa-briefcase fa-3x"></i>
+      <div id="guestmode">
+        <i class="fas fa-user-circle fa-3x"></i>
         <h3>GUEST</h3>
         <p>GUEST MODE</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
   <section class="about bg-light">
     <div class="container">
       <div class="grid-2">
         <div class="center">
-          <i class="fas fa-laptop-code fa-10x"></i>
+          <img src="logo.png">
         </div>
         
         <div>
@@ -241,3 +69,6 @@ footer p {
   <footer class="center bg-dark">
     <img id: "footer-img" src="logo.png"><p>CAROBAR INC. &copy; 2019</p>
   </footer>
+
+</body>
+</html>
