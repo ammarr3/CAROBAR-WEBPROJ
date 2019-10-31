@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>SIGNUP//CAROBAR</title>
+  </head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>DEALER</h1>
+
+                
+                <input type="Name" placeholder="Owner Name" />
+                <input type="CNIC" placeholder="CNIC" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <input type="confirm-password" placeholder="Confirm Password" />
+                <input type="text" placeholder="Address" />
+                <input type="ContactNum" placeholder="Contact#" />
+                <input type="DName" placeholder="DEALER Name" />
+                <input type="City" placeholder="City" />
+                <button class="docsubmit"><i class="fa fa-file"></i> Upload Documents</button><br>
+                <button>SIGNUP</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>CUSTOMER</h1><br>
+                <input type="Name" placeholder="Full Name" />
+                <input type="CNIC" placeholder="CNIC" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <input type="confirm-password" placeholder="Confirm Password" />
+                <input type="text" placeholder="Address" /><br>
+                <button>SIGNUP</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>ARE YOU A CUSTOMER?</h1><br>
+                    <button class="ghost" id="signIn">CUSTOMER</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>WANNA SELL SOME CARS? SIGNUP AS A DEALER!</h1>
+                    <br>
+                    <button class="ghost" id="signUp">DEALER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+
+</body>
+</html>
