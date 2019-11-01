@@ -8,7 +8,7 @@ body {
     content: '';
     height: 100vh;
     width: 100%;
-    background-image: url(temp-back.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) ), url('https://colormunk.com/wp-content/uploads/2015/07/HD-Vintage-Car-Wallpaper-1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
